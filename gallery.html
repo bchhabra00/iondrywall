@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ion Drywall | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icomoon/style.css">
+    <link rel="stylesheet" href="icomoon1/style.css">
+    <link rel="stylesheet" href="icomooncancel/style.css">
+    <link rel="stylesheet" href="icomoonhammer/style.css">
+    <link rel="stylesheet" href="gallery_styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script>
+    function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("sidemenu").style.display = "none";
+    }
+
+    function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    document.getElementById("sidemenu").style.display = "block";
+    }
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      
+      $(".abt").on("click",function(){
+       $("body, html").animate({
+       scrollTop: $( ".about").offset().top
+     }, 600);
+      });
+
+
+      $(".ctct").on("click",function(){
+       $("body, html").animate({
+       scrollTop: $( ".contact").offset().top
+     }, 600);
+      });
+    });
+    </script>
+    <script type="text/javascript">
+
+$(function() {
+   var mypic =  $('.mypic');
+   var container = $('.Pop_up-body');
+   var close = $('.close');
+   var next = $('.next');
+   var prev = $('.prev');
+
+   mypic.click(function(){
+    var content = $(this).html();
+    mypic.removeClass('open');
+    $(this).addClass('open');
+    $('body').addClass('view-open');
+    container.html(content);
+  });
+
+  next.click(function() {
+    var total = $('.images.mypic').length;
+   if ($('.open').index() === total- 1){
+       $('.mypic:last-child').addClass('open');
+    }
+  else{$('.open').removeClass('open').next().toggleClass('open');}
+     var content = $('.open').html();
+     container.html(content);
+  });
+
+  prev.click(function() {
+    if ($('.open').index() == 0){$('.mypic:first-child').addClass('open');}
+    else{ $('.open').removeClass('open').prev().toggleClass('open');}
+     var content = $('.open').html();
+     container.html(content);
+  });
+
+   close.click(function() {$('body').removeClass('view-open'); });
+
+});
+
+
+
+
+</script>
+
+</head>
+<body>
+<div id="myNav" class="slider">
+  <a class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="slider-content">
+    <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#" class="abt">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="#" class="ctct">Contact</a></li>
+        </ul>
+  </div>
+</div>
+<span class="sidemenu" onclick="openNav()">&#9776;</span>
+
+<div class="gal_outer">
+  <div class="header_s">
+  <header>
+    <div class="box">
+  <div class="ham">
+  </div>
+  <div class="logo"></div>
+  <div class="socialiconheader">
+    <a href="https://www.facebook.com"></a>
+    <a href="https://www.twitter.com"></a>
+    <a href="https://www.instagram.com"></a>
+  </div>
+</div>
+<div class="menu_mobile">
+
+<ul>
+
+          <li><span class="hammer"></span><a href="index.html">Home</a></li>
+          <li><span class="hammer"></span><a href="gallery.html">Gallery</a></li>
+          <li><span class="hammer"></span><a href="#" class="abt">About</a></li>
+          <li><span class="hammer"></span><a href="services.html">Services</a></li>
+          <li><span class="hammer"></span><a href="#" class="ctct">Contact</a></li>
+        </ul>
+
+</div>
+   
+  </header>
+
+  </div>
+
+
+
+
+
+  <!--  main section starts-->
+
+
+<div class="galleryheading">
+  <h1>Gallery</h1>
+</div>
+
+
+<div class="serv">
+  <h2>Commercial</h2>
+  <div class="border_ser"></div>
+</div>
+	
+  <section class="images">
+
+  <a class="mypic">
+    <img src="images/comm1.jpg"> <span>This is description of my image</span></a>
+    <a class="mypic">
+    <img src="images/comm2.jpg">
+    <span>This is description of my image</span> </a>
+    <a class="mypic">
+    <img src="images/comm3.jpg">
+    <span>This is description of my image</span> </a>
+    <a class="mypic">
+    <img src="images/comm2.jpg">
+    <span>This is description of my image</span> </a>
+    <a class="mypic">
+    <img src="images/comm3.jpg">
+    <span>This is description of my image</span> </a>
+
+	</section>
+
+<div class="serv"><h2>Residential</h2>
+<div class="border_ser"></div></div>
+	<section class="images">
+
+  <a class="mypic">
+    <img src="images/res1.jpg"> <span>This is description of my image</span></a>
+    <a class="mypic">
+    <img src="images/res2.jpg">
+    <span>This is description of my image</span> </a>
+    <a class="mypic">
+    <img src="images/res2.jpg">
+    <span>This is description of my image</span> </a>
+    <a class="mypic">
+    <img src="images/res2.jpg">
+    <span>This is description of my image</span> </a>
+    <a class="mypic">
+    <img src="images/res1.jpg">
+    <span>This is description of my image</span> </a>
+
+  </section>
+
+	<div class="thumb-viewer">
+    <a class="prev"></a>
+    <a class="next"></a>
+    <a class="close"><span class="close">x</span></a>
+  <div class="Pop_up-body">
+
+
+
+  </div>
+ </div>
+</div>
+
+<footer>
+<div>
+  <p class="copyright">© Ion Drywall Ltd. </p>
+</div>
+  <div class="socialiconfooter">
+      <p>Find us on:</p>
+    <a href="https://www.facebook.com"></a>
+    <a href="https://www.twitter.com"></a>
+    <a href="https://www.instagram.com"></a>
+  </div>
+<div>
+  <p class="poweredby">Website powered by Synergy</p>
+</div>
+
+</footer>
+</body>
+</html>

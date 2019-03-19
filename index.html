@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ion Drywall | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icomoon/style.css">
+    <link rel="stylesheet" href="icomooncancel/style.css">
+    <script>
+    function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.opacity = "1";
+    document.getElementById("side").style.opacity = "0";
+
+
+    // document.getElementById("sidemenu").style.display = "none";
+    }
+
+    function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    // document.getElementById("side").style.opacity = "1";
+    // document.getElementById("sidemenu").style.display = "block";
+    }
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+
+      $(".abt").on("click",function(){
+       $("body, html").animate({
+       scrollTop: $( ".about").offset().top
+     }, 600);
+
+     $('.slider').animate({
+       opacity: 0.0
+     },100);
+      });
+
+
+      $(".ctct").on("click",function(event){
+        event.preventDefault();
+       $("body, html").animate({
+       scrollTop: $( ".contact").offset().top
+     }, 600);
+
+     $('.slider').animate({
+       opacity: 0.0
+     },100);
+
+      });
+
+    });
+    </script>
+</head>
+
+<body>
+  <a class="closebtn" onclick="closeNav()">&times;</a>
+<div id="myNav" class="slider">
+
+  <div class="slider-content">
+    <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#" class="abt">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="#" class="ctct">Contact</a></li>
+        </ul>
+  </div>
+</div>
+<span class="sidemenu" id ="side" onclick="openNav()">&#9776;</span>
+
+  <div class="headerwrapper">
+  <header>
+    <div class="box">
+      <div class="ham">
+  </div>
+  <div class="logo"></div>
+  <div class="socialiconheader">
+    <a href="https://www.facebook.com"></a>
+    <a href="https://www.twitter.com"></a>
+    <a href="https://www.instagram.com"></a>
+  </div>
+</div>
+
+<div class="menu_mobile">
+<ul>
+
+          <li class="home"><span class="hammer"></span><a href="index.html">Home</a></li>
+          <li><span class="hammer"></span><a href="gallery.html">Gallery</a></li>
+          <li><span class="hammer"></span><a href="#" class="abt">About</a></li>
+          <li><span class="hammer"></span><a href="services.html">Services</a></li>
+          <li><span class="hammer"></span><a href="#" class="ctct">Contact</a></li>
+        </ul>
+
+</div>
+
+
+      <div class="showcase_heading">
+          <h1>High Quality. Low Prices.</h1>
+          <a href="services.html">Services we offer ></a>
+      </div>
+  </header>
+
+  </div>
+
+<main>
+  <div class="about" id="about">
+    <div class="aboutwrapper">
+    <div class="aboutheading">About</div>
+    <div class="borderdiv"></div>
+    <div class="aboutdetails">
+      <section>
+      <h3>Company</h3>
+      <p>  Pellentesque imperdiet ligula arcu, vitae vulputate est semper vel. Curabitur a nibh a tortor tempus pulvinar et quis ante.
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+      </section>
+      <section>
+      <h3>Our Mission</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <p>Vestibulum pharetra egestas turpis vitae ultrices.
+          Pellentesque imperdiet ligula arcu, vitae vulputate est semper vel. Curabitur a nibh a tortor tempus pulvinar et quis ante.</p>
+        </section>
+    </div>
+    </div>
+    </div>
+
+    <div class="contact" id="contact">
+      <div class="contactwrapper">
+      <div class="contactheading">Contact</div>
+      <div class="borderdivindex"></div>
+      <div class="contactdetails">
+        <h4>Our Info</h4>
+      <div class="boxes"><span class="address"></span><p class="details">12779, 80 Ave #107, Surrey, BC V3W3A6</p></div>
+      <div class="boxes"><span class="phone"></span><p class="details">(778)-846-5441</p></div>
+      <div class="boxes"><span class="Email"></span><p class="details">info@iondry.com</p></div>
+        <h4 class="feelfree">Feel free to drop us a message</h4>
+        <form id="contact" action="https://formspree.io/soniccrackle17@gmail.com" method="post">
+            <div class="name">
+  					<div class="label"><label id="name">Name</label><br></div>
+  					<input type="text" name="Name"><br>
+  					</div>
+  					<div class="email">
+  					<div class="label"><label id="email">Email</label><br></div>
+  					<input type="email" name="Email"><br>
+  					</div>
+  					<div class="description">
+  					<div class="label"><label id="descrption">How can we help you?</label><br></div>
+  					<textarea name="description"></textarea>
+  					</div>
+  					<button type="submit" value="send">Submit</button>
+				</form>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+<div>
+  <p class="copyright">© Ion Drywall Ltd. </p>
+</div>
+  <div class="socialiconfooter">
+      <p>Find us on:</p>
+    <a href="https://www.facebook.com"></a>
+    <a href="https://www.twitter.com"></a>
+    <a href="https://www.instagram.com"></a>
+  </div>
+<div>
+  <p class="poweredby">Website powered by Synergy</p>
+</div>
+
+</footer>
+</html>
